@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello {{ session['token'] }}</h1>
+    {% for m in movie_list %}
+        <h4>{{ m.title }}</h4>
+        <img src="{{ m.image }}" alt="">
+        <h5>{{ m.year }}</h5>
+    {% endfor %}
+</body>
+</html>
